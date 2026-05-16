@@ -18,7 +18,6 @@ rinconPastelero/
 ├── pages/
 │   ├── recetas.html        # Página con todas las recetas disponibles
 │   ├── detalle-receta.html # Página de detalle de cada receta
-│   ├── comunidad.html      # Página de comunidad
 │   └── 404.html            # Página de error 404
 ├── css/
 │   └── style.css           # Estilos personalizados
