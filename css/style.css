@@ -295,3 +295,32 @@ main {
 .footer p.mb-0 {
   color: #6a6a6a;
 }
+
+/* Tarjetas de Productos */
+.card {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  border-radius: 12px !important;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(216, 122, 141, 0.15) !important; /* Sombra sutil con el tono rosa primario */
+}
+
+.text-primary {
+  color: var(--color-primario) !important;
+}
+
+.btn-outline-primary {
+  color: var(--color-primario);
+  border-color: var(--color-primario);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+  color: white;
+}
