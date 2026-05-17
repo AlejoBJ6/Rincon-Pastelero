@@ -202,6 +202,42 @@ main {
   border-color: #ffffff;
 }
 
+/* Botones */
+.btn-primary {
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+  color: white;
+  font-weight: 600;
+}
+
+.btn-ver-mas {
+  padding: 0.8rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 8px 20px rgba(216, 122, 141, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-ver-mas:hover {
+  background-color: #c76579;
+  border-color: #c76579;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(216, 122, 141, 0.4);
+}
+
+.btn-ver-mas i {
+  transition: transform 0.3s ease;
+}
+
+.btn-ver-mas:hover i {
+  transform: translateX(5px);
+}
+
 
 /* Footer */
 .footer {
