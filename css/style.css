@@ -324,3 +324,27 @@ main {
   border-color: var(--color-primario);
   color: white;
 }
+
+/* Cartel */
+.cartelSection {
+  background-color: var(--color-fondo);
+}
+
+.cartelBox {
+  background: linear-gradient(135deg, var(--color-primario) 0%, #c76579 100%);
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(216, 122, 141, 0.15);
+  width: 100%;
+}
+
+.cartelMain {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.cartelSub {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  opacity: 0.9;
+}
