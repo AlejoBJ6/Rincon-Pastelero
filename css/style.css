@@ -34,6 +34,56 @@ main {
   background-color: #FAFAFA;
 }
 
+.Banner {
+  position: relative;
+  min-height: 70vh;
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.Banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  padding: 4rem 1rem;
+}
+
+.heroLabel {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--color-oscuro);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.Banner h1 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  margin-bottom: 1rem;
+  line-height: 1.05;
+}
+
+.Banner p {
+  max-width: 680px;
+  margin: 0 auto 1.75rem;
+  font-size: 1.12rem;
+  color: #f7f2f0;
+}
+
 /* Navbar */
 
 .navbar {
