@@ -66,7 +66,6 @@
         <h1 class="fw-bold text-primary display-5 mb-2">Secretos de Repostería</h1>
         <p class="text-muted max-width-600 mx-auto">Encuentra tu próximo desafío pastelero y aprende paso a paso de forma divertida</p>
       </div>
-
       <!-- Barra de Filtros Interactiva (Diseño Único) -->
       <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
         <button class="filter-btn active" data-filter="all">Todas</button>
@@ -78,6 +77,27 @@
       
       <!-- Listado de Recetas -->
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-center">
+        <!-- 4. Pepas de Membrillo -->
+        <div class="col recipe-col" data-category="desayuno">
+          <div class="card recipe-card h-100 border-0">
+            <div class="recipe-img-container">
+              <span class="recipe-badge">Fácil</span>
+              <span class="recipe-time-badge">⏱️ 25 min</span>
+              <img src="../img/pepas-de-membrillo-argentinas.jpg" alt="Pepas de Membrillo" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h3 class="fs-5 fw-bold text-dark mb-2">Pepas de Membrillo</h3>
+              <p class="card-text text-muted flex-grow-1 fs-7">Exquisitas galletitas caseras con una masa tierna de vainilla y el clásico corazón de dulce de membrillo dulce.</p>
+              
+              <div class="recipe-meta">
+                <span><i class="bi bi-tag-fill"></i> Merienda</span>
+                <span><i class="bi bi-star-fill"></i> 4.9</span>
+              </div>
+              
+              <a href="./detalle-receta.html" class="btn btn-outline-primary w-100 py-2 rounded-pill">Ver Receta</a>
+            </div>
+          </div>
+        </div>
         <!-- 1. Alfajores -->
         <div class="col recipe-col" data-category="clasico">
           <div class="card recipe-card h-100 border-0">
@@ -99,7 +119,6 @@
             </div>
           </div>
         </div>
-
         <!-- 2. Budín -->
         <div class="col recipe-col" data-category="desayuno">
           <div class="card recipe-card h-100 border-0">
@@ -121,7 +140,6 @@
             </div>
           </div>
         </div>
-
         <!-- 3. Flan -->
         <div class="col recipe-col" data-category="postre">
           <div class="card recipe-card h-100 border-0">
@@ -140,28 +158,6 @@
               </div>
               
               <a href="./detalle-receta.html?receta=flan" class="btn btn-outline-primary w-100 py-2 rounded-pill">Ver Receta</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4. Pepas de Membrillo -->
-        <div class="col recipe-col" data-category="desayuno">
-          <div class="card recipe-card h-100 border-0">
-            <div class="recipe-img-container">
-              <span class="recipe-badge">Fácil</span>
-              <span class="recipe-time-badge">⏱️ 25 min</span>
-              <img src="../img/pepas-de-membrillo-argentinas.jpg" alt="Pepas de Membrillo" />
-            </div>
-            <div class="card-body d-flex flex-column p-4">
-              <h3 class="fs-5 fw-bold text-dark mb-2">Pepas de Membrillo</h3>
-              <p class="card-text text-muted flex-grow-1 fs-7">Exquisitas galletitas caseras con una masa tierna de vainilla y el clásico corazón de dulce de membrillo dulce.</p>
-              
-              <div class="recipe-meta">
-                <span><i class="bi bi-tag-fill"></i> Merienda</span>
-                <span><i class="bi bi-star-fill"></i> 4.9</span>
-              </div>
-              
-              <a href="./detalle-receta.html?receta=pepas" class="btn btn-outline-primary w-100 py-2 rounded-pill">Ver Receta</a>
             </div>
           </div>
         </div>
@@ -187,7 +183,6 @@
             </div>
           </div>
         </div>
-
         <!-- 6. Muffins -->
         <div class="col recipe-col" data-category="desayuno">
           <div class="card recipe-card h-100 border-0">
@@ -209,7 +204,6 @@
             </div>
           </div>
         </div>
-
         <!-- 7. Medialunas -->
         <div class="col recipe-col" data-category="desayuno">
           <div class="card recipe-card h-100 border-0">
@@ -231,7 +225,6 @@
             </div>
           </div>
         </div>
-
         <!-- 8. Cheesecake -->
         <div class="col recipe-col" data-category="tarta">
           <div class="card recipe-card h-100 border-0">
@@ -318,7 +311,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-
     <!-- Sistema de Filtro Interactivo Avanzado en Vanilla JS -->
     <script>
       document.querySelectorAll('.filter-btn').forEach(button => {
