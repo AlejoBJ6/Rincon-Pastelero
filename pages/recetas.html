@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rincón Pastelero es un sitio dedicado a compartir recetas de pasteles, consejos de repostería y todo lo relacionado con el mundo de los postres."
+    />
+    <meta name="author" content="Acuña Alejo" />
+    <meta name="author" content="Gallardo Samuel" />
+    <meta name="author" content="Matas Agustin" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Recetas - Rincón Pastelero</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="../index.html">
+            🧁 Rincón Pastelero
+          </a>
+          <!-- Botón hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Menú de navegación -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./recetas.html">Recetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./error404.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main class="container my-5">
+      <div class="text-center mb-5">
+        <span class="badge rounded-pill px-3 py-2 mb-2" style="background-color: var(--color-crema); color: var(--color-primario); font-weight: 700;">GUÍAS DE COCINA</span>
+        <h1 class="fw-bold text-primary display-5 mb-2">Secretos de Repostería</h1>
+        <p class="text-muted max-width-600 mx-auto">Encuentra tu próximo desafío pastelero y aprende paso a paso de forma divertida</p>
+      </div>
+      <!-- Barra de Filtros Interactiva (Diseño Único) -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="clasico">Clásicos</button>
+        <button class="filter-btn" data-filter="desayuno">Desayuno y Merienda</button>
+        <button class="filter-btn" data-filter="tarta">Tartas y Tortas</button>
+        <button class="filter-btn" data-filter="postre">Postres</button>
+      </div>
+      
+      <!-- Listado de Recetas -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-center">
+        <!-- 4. Pepas de Membrillo -->
+        <div class="col recipe-col" data-category="desayuno">
+          <div class="card recipe-card h-100 border-0">
+            <div class="recipe-img-container">
+              <span class="recipe-badge">Fácil</span>
+              <span class="recipe-time-badge">⏱️ 25 min</span>
+              <img src="../img/pepas-de-membrillo-argentinas.jpg" alt="Pepas de Membrillo" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h3 class="fs-5 fw-bold text-dark mb-2">Pepas de Membrillo</h3>
+              <p class="card-text text-muted flex-grow-1 fs-7">Exquisitas galletitas caseras con una masa tierna de vainilla y el clásico corazón de dulce de membrillo dulce.</p>
+              
+              <div class="recipe-meta">
+                <span><i class="bi bi-tag-fill"></i> Merienda</span>
+                <span><i class="bi bi-star-fill"></i> 4.9</span>
+              </div>
+              
+              <a href="./detalle-receta.html" class="btn btn-outline-primary w-100 py-2 rounded-pill">Ver Receta</a>
+            </div>
+          </div>
+        </div>
+        <!-- 1. Alfajores -->
+        <div class="col recipe-col" data-category="clasico">
+          <div class="card recipe-card h-100 border-0">
+            <div class="recipe-img-container">
+              <span class="recipe-badge">Fácil</span>
+              <span class="recipe-time-badge">⏱️ 30 min</span>
+              <img src="../img/alfajor.jpg" alt="Alfajores de Dulce de Leche" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h3 class="fs-5 fw-bold text-dark mb-2">Alfajores de Dulce de Leche</h3>
+              <p class="card-text text-muted flex-grow-1 fs-7">Aprende a preparar el clásico dulce argentino con masa súper suave de maicena que se derrite en la boca.</p>
+              
+              <div class="recipe-meta">
+                <span><i class="bi bi-tag-fill"></i> Clásico</span>
+                <span><i class="bi bi-star-fill"></i> 4.9</span>
+              </div>
+              
+              <a href="./detalle-receta.html?receta=alfajor" class="btn btn-outline-primary w-100 py-2 rounded-pill">Ver Receta</a>
+            </div>
+          </div>
+        </div>
+        <!-- 2. Budín -->
+        <div class="col recipe-col" data-category="desayuno">
+          <div class="card recipe-card h-100 border-0">
+            <div class="recipe-img-container">
+              <span class="recipe-badge">Fácil</span>
+              <span class="recipe-time-badge">⏱️ 45 min</span>
+              <img src="../img/buddin.jpg" alt="Budín de Limón" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h3 class="fs-5 fw-bold text-dark mb-2">Budín Casero de Limón</h3>
+              <p class="card-text text-muted flex-grow-1 fs-7">El secreto para un budín cítrico súper húmedo y esponjoso con un glaseado crujiente ideal para la tarde.</p>
+              
+              <div class="recipe-meta">
+                <span><i class="bi bi-tag-fill"></i> Merienda</span>
+                <span><i class="bi bi-star-fill"></i> 4.8</span>
+              </div>
+              
+              <a href="./detalle-receta.html?receta=budin" class="btn btn-outline-primary w-100 py-2 rounded-pill">Ver Receta</a>
+            </div>
+          </div>
+        </div>
+        <!-- 3. Flan -->
+        <div class="col recipe-col" data-category="postre">
+          <div class="card recipe-card h-100 border-0">
+            <div class="recipe-img-container">
+              <span class="recipe-badge" style="background-color: #f39c12;">Media</span>
+              <span class="recipe-time-badge">⏱️ 60 min</span>
+              <img src="../img/flan.jpg" alt="Flan Casero" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h3 class="fs-5 fw-bold text-dark mb-2">Flan Casero de la Abuela</h3>
+              <p class="card-text text-muted flex-grow-1 fs-7">La receta tradicional infalible con textura cremosa sin agujeritos y el truco para un caramelo dorado perfecto.</p>
+              
+              <div class="recipe-meta">
+                <span><i class="bi bi-tag-fill"></i> Postre</span>
+                <span><i class="bi bi-star-fill"></i> 5.0</span>
+              </div>
+              
+              <a href="./detalle-receta.html?receta=flan" class="btn btn-outline-primary w-100 py-2 rounded-pill">Ver Receta</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Lemon Pie -->
+        <div class="col recipe-col" data-category="tarta">
+          <div class="card recipe-card h-100 border-0">
+            <div class="recipe-img-container">
+              <span class="recipe-badge" style="background-color: #e74c3c;">Difícil</span>
+              <span class="recipe-time-badge">⏱️ 90 min</span>
+              <img src="../img/lemonpie.jpg" alt="Lemon Pie" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h3 class="fs-5 fw-bold text-dark mb-2">Lemon Pie Tradicional</h3>
+              <p class="card-text text-muted flex-grow-1 fs-7">La combinación sublime de crema ácida de limón, masa quebrada crocante y un merengue italiano perfecto.</p>
+              
+              <div class="recipe-meta">
+                <span><i class="bi bi-tag-fill"></i> Tarta</span>
+                <span><i class="bi bi-star-fill"></i> 4.9</span>
+              </div>
+              
+              <a href="./detalle-receta.html?receta=lemonpie" class="btn btn-outline-primary w-100 py-2 rounded-pill">Ver Receta</a>
+            </div>
+          </div>
+        </div>
+        <!-- 6. Muffins -->
+        <div class="col recipe-col" data-category="desayuno">
+          <div class="card recipe-card h-100 border-0">
+            <div class="recipe-img-container">
+              <span class="recipe-badge">Fácil</span>
+              <span class="recipe-time-badge">⏱️ 25 min</span>
+              <img src="../img/muffin.jpg" alt="Muffins de Vainilla" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h3 class="fs-5 fw-bold text-dark mb-2">Muffins de Vainilla</h3>
+              <p class="card-text text-muted flex-grow-1 fs-7">Receta base súper esponjosa y húmeda, ideal para rellenar con chips, arándanos o dulce de leche.</p>
+              
+              <div class="recipe-meta">
+                <span><i class="bi bi-tag-fill"></i> Desayuno</span>
+                <span><i class="bi bi-star-fill"></i> 4.6</span>
+              </div>
+              
+              <a href="./detalle-receta.html?receta=muffins" class="btn btn-outline-primary w-100 py-2 rounded-pill">Ver Receta</a>
+            </div>
+          </div>
+        </div>
+        <!-- 7. Medialunas -->
+        <div class="col recipe-col" data-category="desayuno">
+          <div class="card recipe-card h-100 border-0">
+            <div class="recipe-img-container">
+              <span class="recipe-badge" style="background-color: #e74c3c;">Difícil</span>
+              <span class="recipe-time-badge">⏱️ 120 min</span>
+              <img src="../img/medialunas.jpg" alt="Medialunas de Manteca" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h3 class="fs-5 fw-bold text-dark mb-2">Medialunas de Manteca</h3>
+              <p class="card-text text-muted flex-grow-1 fs-7">El paso a paso completo para lograr un hojaldrado tierno, aromático y con un almíbar dulce irresistible.</p>
+              
+              <div class="recipe-meta">
+                <span><i class="bi bi-tag-fill"></i> Desayuno</span>
+                <span><i class="bi bi-star-fill"></i> 5.0</span>
+              </div>
+              
+              <a href="./detalle-receta.html?receta=medialunas" class="btn btn-outline-primary w-100 py-2 rounded-pill">Ver Receta</a>
+            </div>
+          </div>
+        </div>
+        <!-- 8. Cheesecake -->
+        <div class="col recipe-col" data-category="tarta">
+          <div class="card recipe-card h-100 border-0">
+            <div class="recipe-img-container">
+              <span class="recipe-badge" style="background-color: #f39c12;">Media</span>
+              <span class="recipe-time-badge">⏱️ 50 min</span>
+              <img src="../img/cheesecake.jpg" alt="Cheesecake" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h3 class="fs-5 fw-bold text-dark mb-2">Cheesecake de Frutos Rojos</h3>
+              <p class="card-text text-muted flex-grow-1 fs-7">Exquisito pastel de queso frío, con base crocante de galletas y cubierto de una salsa casera deliciosa.</p>
+              
+              <div class="recipe-meta">
+                <span><i class="bi bi-tag-fill"></i> Tarta</span>
+                <span><i class="bi bi-star-fill"></i> 4.9</span>
+              </div>
+              
+              <a href="./detalle-receta.html?receta=cheesecake" class="btn btn-outline-primary w-100 py-2 rounded-pill">Ver Receta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="footer mt-5 py-4">
+      <div class="container">
+        <div class="row gx-4 gy-4">
+          <!-- Sección Sobre Nosotros -->
+          <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3">🧁 Rincón Pastelero</h5>
+            <p>
+              Dedicados a compartir recetas de pasteles, consejos de repostería
+              y todo lo relacionado con el mundo de los postres.
+            </p>
+          </div>
+          <!-- Sección Redes Sociales -->
+          <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3">Síguenos</h5>
+            <div class="social-links d-flex justify-content-center justify-content-md-start">
+              <span class="social-icon" title="Facebook">
+                <i class="bi bi-facebook"></i>
+              </span>
+              <span class="social-icon" title="Instagram">
+                <i class="bi bi-instagram"></i>
+              </span>
+              <span class="social-icon" title="TikTok">
+                <i class="bi bi-tiktok"></i>
+              </span>
+            </div>
+          </div>
+          <!-- Sección Contacto -->
+          <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3">Contacto</h5>
+            <p>
+              <strong>Email:</strong>
+              <span>rinconpastelero@gmail.com</span>
+            </p>
+            <p>
+              <strong>Teléfono:</strong>
+              <span>+54 123 456 789</span>
+            </p>
+          </div>
+        </div>
+        <!-- Línea separadora -->
+        <hr class="my-4" />
+        <!-- Copyright -->
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-0">
+              &copy; 2026 Rincón Pastelero. Todos los derechos reservados.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <p class="mb-0">
+              Diseño por: Acuña Alejo | Gallardo Samuel | Matas Agustin
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Sistema de Filtro Interactivo Avanzado en Vanilla JS -->
+    <script>
+      document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          // Cambiar estado activo en los botones
+          document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          
+          const filterValue = button.getAttribute('data-filter');
+          
+          // Filtrar las recetas con una transición suave
+          document.querySelectorAll('.recipe-col').forEach(column => {
+            const cardCategory = column.getAttribute('data-category');
+            
+            if (filterValue === 'all' || cardCategory === filterValue) {
+              column.style.display = 'block';
+              // Pequeña animación fade-in
+              column.style.opacity = '0';
+              setTimeout(() => {
+                column.style.transition = 'opacity 0.4s ease';
+                column.style.opacity = '1';
+              }, 50);
+            } else {
+              column.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
