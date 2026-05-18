@@ -210,6 +210,12 @@ main {
   font-weight: 600;
 }
 
+.btn-primary:hover {
+  background-color: #c76579;
+  border-color: #c76579;
+  color: white;
+}
+
 .btn-ver-mas {
   padding: 0.8rem 2.5rem;
   border-radius: 50px;
