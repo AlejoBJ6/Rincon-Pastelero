@@ -502,3 +502,8 @@ main {
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
+
+.color-rosa{
+  background-color: var(--color-crema) !important; 
+border-color: #f5c2c7 !important;
+}
