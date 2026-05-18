@@ -17,8 +17,9 @@ rinconPastelero/
 ├── index.html              # Página principal con navbar, footer y algunas recetas
 ├── pages/
 │   ├── recetas.html        # Página con todas las recetas disponibles
+│   ├── productos.html      # Página con el listado de productos
 │   ├── detalle-receta.html # Página de detalle de cada receta
-│   └── 404.html            # Página de error 404
+│   └── error404.html       # Página de error 404
 ├── css/
 │   └── style.css           # Estilos personalizados
 ├── img/                    # Carpeta con imágenes del proyecto
@@ -43,6 +44,10 @@ rinconPastelero/
 - Listado completo de todas las recetas disponibles
 - Tarjetas interactivas
 - Enlaces para acceder al detalle de cada receta
+
+### 🛍️ Productos
+- Listado de productos disponibles
+- Visualización atractiva de los diferentes artículos en venta
 
 ### 📖 Detalle de Receta
 - Información completa de la receta seleccionada
